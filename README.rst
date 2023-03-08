@@ -122,7 +122,7 @@ To visualize the accounts:
 
 .. code:: python
 
-    import matplotlib as plt
+    import matplotlib.pyplot as plt
     test_mrio.emissions.plot_account('emission_type1')
     plt.show()
 
