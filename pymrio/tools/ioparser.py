@@ -785,7 +785,7 @@ def parse_wiod(path, year=None, names=("isic", "c_codes"), popvector=None):
     additional information is included as factor_input extension (value
     added,...)
 
-    The folder with these xslx must than be passed to the WIOD parsing
+    The folder with these xlsx must then be passed to the WIOD parsing
     function. This folder may contain folders with the extension data. Every
     folder within the wiod root folder will be parsed for extension data and
     will be added to the IOSystem. The WIOD database offers the download of
@@ -820,7 +820,7 @@ def parse_wiod(path, year=None, names=("isic", "c_codes"), popvector=None):
         four or two digits (eg [2012 or 12]). If the given path contains a
         specific file, the value of year will not be used (but inferred from
         the meta data)- otherwise it must be given For the monetary data the
-        parser searches for files with 'wiot - two digit year'.
+        parser searches for files with 'wiod - two digit year'.
     names : string or tuple, optional
         WIOD provides three different sector/final demand categories naming
         schemes. These can can be specified for the IOSystem. Pass:
@@ -835,7 +835,7 @@ def parse_wiod(path, year=None, names=("isic", "c_codes"), popvector=None):
         Internally, the parser relies on 1) for the interindustry flows and 3)
         for the final demand categories. This is the default and will also be
         used if just 'isic' gets passed ('c_codes' also replace 'isic' if this
-        was passed for final demand categories). To specify different finial
+        was passed for final demand categories). To specify different final
         consumption category names, pass a tuple with (sectors/interindustry
         classification, fd categories), eg ('isic', 'full'). Names are case
         insensitive and passing the first character is sufficient.
