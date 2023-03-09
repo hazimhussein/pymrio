@@ -820,7 +820,7 @@ def parse_wiod(path, year=None, names=("isic", "c_codes"), popvector=None):
         four or two digits (eg [2012 or 12]). If the given path contains a
         specific file, the value of year will not be used (but inferred from
         the meta data)- otherwise it must be given For the monetary data the
-        parser searches for files with 'wiod - two digit year'.
+        parser searches for files with 'wiot - two digit year'.
     names : string or tuple, optional
         WIOD provides three different sector/final demand categories naming
         schemes. These can can be specified for the IOSystem. Pass:
